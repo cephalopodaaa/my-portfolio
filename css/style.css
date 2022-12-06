@@ -3,12 +3,73 @@
   padding: 0;
 }
 
+body {
+  background-color: darkslategrey;
+  color: lightsalmon;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 54px;
+  font-weight: 300;
+}
+body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+}
+
+#personal-info {
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  justify-content: center;
+  max-height: 400px;
+}
+#personal-info img {
+  max-height: 400px;
+  width: auto;
+}
+
+.content {
+  font-weight: 700;
+  max-width: 400px;
+}
+.content h1 {
+  font-size: 76px;
+  font-weight: 500;
+}
+.content h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.content .footer {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  justify-content: center;
+}
+.content .footer a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.content .footer .fb {
+  color: skyblue;
+}
+.content .footer .tw {
+  color: yellow;
+}
+.content .footer .ig {
+  color: red;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "tile1 tile2 tile3" "tile4 tile5 tile6";
-  background-color: paleturquoise;
   min-height: 500px;
   margin: 5px;
   background-repeat: no-repeat;
@@ -19,18 +80,17 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  background-color: palevioletred;
   margin: 10px;
   min-height: 20px;
   min-width: 150px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  opacity: 50%;
 }
 .grid-container .tile .text {
   background-color: black;
   width: 100%;
-  margin: 0px;
 }
 .grid-container .tile .text h2 {
   color: darkmagenta;
@@ -40,10 +100,17 @@
   color: darkorchid;
   font-weight: 400;
 }
+.grid-container .tile:hover {
+  transform: scale(1.5, 2);
+  opacity: 1;
+  justify-content: center;
+  transition: 2s;
+  z-index: 1;
+}
 
 .tile1 {
   grid-area: tile1;
-  background-image: url(../images/);
+  background-image: url(../images/horiseon.png);
 }
 
 .tile2 {
@@ -69,4 +136,28 @@
 .tile6 {
   grid-area: tile6;
   background-image: url(../images/surfing.jpg);
+}
+
+.footer {
+  display: flex;
+  background-color: #000000;
+  padding: 45px;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 20px 40px;
+  width: 10%;
+  text-align: center;
+}
+.footer .fb {
+  color: skyblue;
+}
+.footer .tw {
+  color: yellow;
+}
+.footer .ig {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
