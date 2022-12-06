@@ -16,39 +16,65 @@
     "tile1 tile2 tile3"
     "tile4 tile5 tile6";
     background-color:paleturquoise;
+    min-height: 500px;
     margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 
-    div {
+    .tile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
         background-color: palevioletred;
-        margin: 20px;
-        padding: 20px;
-        min-height: 200px;
+        margin: 10px;
+        min-height: 20px;
         min-width: 150px;
-        h2 {
-            color: darkmagenta;
-            font-weight: 400;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        .text {
+        background-color: black;
+        width: 100%;
+        margin: 0px;
+            h2 {
+                color: darkmagenta;
+                font-weight: 700;
+            }
+            p {
+                color:darkorchid;
+                font-weight: 400;
+            }
         }
     }
+    
 }
 
 
 .tile1 {
     grid-area: tile1;
+    background-image: url(../images/)
 }
 .tile2 {
     grid-area: tile2;
+    background-image: url(../images/cooking.jpg)
 }
 .tile3 {
     grid-area: tile3;
+    background-image: url(../images/coding.jpg)
 }
 .tile4 {
     grid-area: tile4;
+    background-image: url(../images/guitar.jpg)
 }
 .tile5 {
     grid-area: tile5;
+    background-image: url(../images/running.jpg)
 }
 .tile6 {
     grid-area: tile6;
+    background-image: url(../images/surfing.jpg)
 }
 
 
